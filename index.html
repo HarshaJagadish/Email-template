@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>css-graph</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; background-color: #eee; display: flex; justify-content: center; box-sizing: border-box;">
+    <div style="flex:1 0 50%">
+        <div class="break"
+            style="background-color: #8f8a8a;border-radius: 5px 5px 0 0;width: 100%;text-align: center;flex-shrink: 0; flex:0 1 100%">
+            <h5>Orange theory</h5>
+            <h4>Workout companion</h4>
+            <p>Sept 26 , 2019 . 6:31 PM</p>
+        </div>
+        <div class="chart"
+            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; width: 40vw; padding: 15px 10px;flex-shrink: 0;">
+            <div class="bar-45"
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #8f8a8a; grid-row-start: 45; grid-row-end: 101;">
+                <span
+                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">56</span>
+            </div>
+            <div class="bar-100"
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #3686ff; grid-row-start: 100; grid-row-end: 101;">
+                <span
+                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">11</span>
+            </div>
+            <div class="bar-63"
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #ff4136; grid-row-start: 63; grid-row-end: 101;">
+                <span
+                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">38</span>
+            </div>
+            <div class="bar-11"
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #e2a41e; grid-row-start: 11; grid-row-end: 101;">
+                <span
+                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">90</span>
+            </div>
+            <div class="bar-46"
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #ff4136; grid-row-start: 46; grid-row-end: 101;">
+                <span
+                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">55</span>
+            </div>
+
+        </div>
+        <span style="text-align: center;">
+            <p style="text-transform: uppercase;margin-top: 0%;">minutes per zone</p>
+        </span>
+        <div style="grid-column-gap: 5px;">
+            <div style="flex: 1 0 50%; grid-column-gap: 5px;">
+                <div
+                    style="background-color: grey; width: 150px; position: relative; float: left; margin-left: 10%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
+                    <b>1:21:22</b>
+                    <p style="text-transform: uppercase;">duration</p>
+                </div>
+                <div
+                    style="background-color: grey; width: 150px; position: relative; float: right;margin-right: 11%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
+                    <b>50</b>
+                    <p style="text-transform: uppercase;">points</p>
+                </div>
+
+            </div>
+            <div style="flex: 1 0 50%; margin-top: 5px; grid-column-gap: 5px;">
+                    <div
+                        style="background-color: grey; width: 150px; position: relative; float: left; margin-left: 10%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
+                        <b>110</b>
+                        <p style="text-transform: uppercase;">Average hr</p>
+                    </div>
+                    <div
+                        style="background-color: grey; width: 150px; position: relative; float: right;margin-right: 11%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
+                        <b>178</b>
+                        <p style="text-transform: uppercase;">peak hr</p>
+                    </div>
+    
+                </div>
+                <div style="flex: 1 0 50%; margin-top: 5px; grid-column-gap: 5px;">
+                        <div
+                            style="background-color: grey; width: 150px; position: relative; float: left; margin-left: 10%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
+                            <b>400</b>
+                            <p style="text-transform: uppercase;">calories</p>
+                        </div>
+                        <div
+                            style="background-color: grey; width: 150px; position: relative; float: right;margin-right: 11%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
+                            <b>2445</b>
+                            <p style="text-transform: uppercase;">steps</p>
+                        </div>
+        
+                    </div>
+        </div>
+        
+        
+    </div>
+</body>
+
+</html>

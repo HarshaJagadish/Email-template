@@ -27,11 +27,13 @@
 
         <div class="break"
             style="border-radius: 30px;
-            background-color: #f5f5f5;width: 100%;text-align: left;flex-shrink: 0; flex:0 1 100%; padding: 20px 33px;clear: both;height: 17%;">
-            <div style="min-width: 120px;min-height: 120px;float: left;">
+            background-color: #f5f5f5;text-align: left;flex-shrink: 0; flex:0 1 100%; padding: 20px 33px;clear: both;height: 17%;display: flex;flex-direction: row;flex-wrap:nowrap;flex-grow: 0;
+   flex-shrink: 1;
+    ">
+            <div style="min-width: 120px;min-height: 120px;">
                 <img src="" alt="orange-theory-logo">
             </div>
-            <div style="float: right;">
+            <div>
                 <p style="font-family: Helvetica;
                         font-size: 20px;
                         font-weight: bold;
@@ -53,7 +55,7 @@
                         text-transform: capitalize;
                         color: #333333;
                         display: block;
-                      }">{{companionid}} Workout Companion</p>
+                      ">{{companionid}} Workout Companion</p>
                 <p style="font-family: Helvetica;
                         font-size: 24px;
                         font-weight: normal;
@@ -63,16 +65,16 @@
                         letter-spacing: 3px;
                         color: #333333;
                         display: block;
-                      }">{{date}} <span style="color:#ff7307">.</span> {{time}}</p>
+                      ">{{date}} <span style="color:#ff7307">.</span> {{time}}</p>
             </div>
 
         </div>
         <div class="chart"
-            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; width: 40vw; padding: 15px 10px;flex-shrink: 0;justify-content: center;">
+            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; padding: 15px 10px;flex-shrink: 0;justify-content: center;text-align: center;margin-top:25px;">
             <!-- TODO: please replace the grid-row-end with the actual value -->
             <div class="bar-45"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #bbc5c5; grid-row-start: 101; grid-row-end: 45;">
-                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #bbc5c5; grid-row-start: 101; grid-row-end: 45;">
+                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
                     font-size: 45px;
                     font-weight: bold;
                     font-stretch: normal;
@@ -80,12 +82,12 @@
                     line-height: normal;
                     letter-spacing: normal;
                     text-align: center;
-                    color: #333333;">{{zone01}}</span>
+                    color: #333333;padding: 5px;">{{zone01}}</span>
             </div>
             <div class="bar-100"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #0b9cec; grid-row-start: 101; grid-row-end: 100;">
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #0b9cec; grid-row-start: 101; grid-row-end: 100;">
                 <!-- TODO: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
                     font-size: 45px;
                     font-weight: bold;
                     font-stretch: normal;
@@ -96,9 +98,9 @@
                     color: #333333;">{{zone02}}</span>
             </div>
             <div class="bar-63"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #02c139; grid-row-start: 101; grid-row-end: 63;">
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #02c139; grid-row-start: 101; grid-row-end: 63;">
                 <!-- TODO: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
                     font-size: 45px;
                     font-weight: bold;
                     font-stretch: normal;
@@ -109,9 +111,9 @@
                     color: #333333;">{{zone03}}</span>
             </div>
             <div class="bar-11"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #ff8a16; grid-row-start: 101; grid-row-end: 11;">
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #ff8a16; grid-row-start: 101; grid-row-end: 11;">
                 <!-- TODO: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
                     font-size: 45px;
                     font-weight: bold;
                     font-stretch: normal;
@@ -122,9 +124,9 @@
                     color: #333333;">{{zone04}}</span>
             </div>
             <div class="bar-46"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #fa3b08; grid-row-start: 101; grid-row-end: 46;">
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #fa3b08; grid-row-start: 101; grid-row-end: 46;">
                 <!-- TODO: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
                     font-size: 45px;
                     font-weight: bold;
                     font-stretch: normal;
@@ -152,7 +154,7 @@
             <div style="display: flex;flex-direction: row;justify-content: center;">
                 <div
                     style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px; margin-right: 39.2px;">
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px; margin-right: 39.2px;">
                     <img src="" alt="duration-icon" style="width: 48.3px;
                     height: 55px;
                     background-color: #ff5903;">
@@ -176,7 +178,7 @@
                     color: #333333;">duration</p>
                 </div>
                 <div style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;">
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;">
                     <img src="" alt="points-icon" style="width: 55px;
                     height: 55px;
                     background-color: #ff5903;">
@@ -204,7 +206,7 @@
             <div style="display: flex;flex-direction: row;justify-content: center;">
                 <div
                     style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;margin-right: 39.2px;">
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;margin-right: 39.2px;">
                     <img src="" alt="avg-hr-icon" style="width: 59.6px;
                     height: 55px;
                     background-color: #ff5903;">
@@ -228,7 +230,7 @@
                     color: #333333;">Average hr</p>
                 </div>
                 <div style="background-color: #f5f5f5; width: 265px;
-                    height: 200px;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;">
+                    height: 200px;padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;">
                     <img src="" alt="peak-hr-icon" style="width: 55px;
                     height: 55px;
                     background-color: #ff5903;">
@@ -256,7 +258,7 @@
             <div style="display: flex;flex-direction: row;justify-content: center;">
                 <div
                     style="background-color: #f5f5f5; width: 265px;
-                    height: 200px;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;margin-right: 39.2px;">
+                    height: 200px;padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;margin-right: 39.2px;">
                     <img src="" alt="calories-icon" style="width: 38.1px;
                     height: 55px;
                     background-color: #ff5903;">
@@ -280,7 +282,7 @@
                     color: #333333;">calories</p>
                 </div>
                 <div style="background-color: #f5f5f5; width: 265px;
-                    height: 200px;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;">
+                    height: 200px;padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;">
                     <img src="" alt="steps-icon" style="width: 61.9px;
                     height: 55px;
                     background-color: #ff5903;">

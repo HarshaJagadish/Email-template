@@ -15,96 +15,346 @@
         html,
         body {
             margin: 0;
-            background-color: #eee;
+            background-color: #fff;
             display: flex;
             justify-content: center;
         }
     </style>
 </head>
 
-<body style="margin: 0; background-color: #eee; display: flex; justify-content: center; box-sizing: border-box;">
+<body style="margin: 0; background-color: #fff; display: flex; justify-content: center; box-sizing: border-box;">
     <div style="flex:1 0 50%">
+
         <div class="break"
-            style="background-color: #8f8a8a;border-radius: 5px 5px 0 0;width: 100%;text-align: center;flex-shrink: 0; flex:0 1 100%">
-            <h5>Orange theory</h5>
-            <h4>Workout companion</h4>
-            <p>Sept 26 , 2019 . 6:31 PM</p>
+            style="border-radius: 30px;
+            background-color: #f5f5f5;width: 100%;text-align: left;flex-shrink: 0; flex:0 1 100%; padding: 20px 33px;clear: both;height: 17%;">
+            <div style="min-width: 120px;min-height: 120px;float: left;">
+                <img src="" alt="orange-theory-logo">
+            </div>
+            <div style="float: right;">
+                <p style="font-family: Helvetica;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1;
+                        letter-spacing: 3.33px;
+                        text-align: left;
+                        text-transform: uppercase;
+                        display: block;
+                        color: #ff8a16;">orange theory</p>
+                <p style="font-family: Helvetica;
+                        font-size: 30px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-transform: capitalize;
+                        color: #333333;
+                        display: block;
+                      }">{{companionid}} Workout Companion</p>
+                <p style="font-family: Helvetica;
+                        font-size: 24px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: 3px;
+                        color: #333333;
+                        display: block;
+                      }">{{date}} <span style="color:#ff7307">.</span> {{time}}</p>
+            </div>
+
         </div>
         <div class="chart"
-            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; width: 40vw; padding: 15px 10px;flex-shrink: 0;">
+            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; width: 40vw; padding: 15px 10px;flex-shrink: 0;justify-content: center;">
+            <!-- TODO: please replace the grid-row-end with the actual value -->
             <div class="bar-45"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #8f8a8a; grid-row-start: 45; grid-row-end: 101;">
-                <span
-                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">56</span>
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #bbc5c5; grid-row-start: 101; grid-row-end: 45;">
+                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{zone01}}</span>
             </div>
             <div class="bar-100"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #3686ff; grid-row-start: 100; grid-row-end: 101;">
-                <span
-                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">11</span>
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #0b9cec; grid-row-start: 101; grid-row-end: 100;">
+                <!-- TODO: please replace the grid-row-end with the actual value -->
+                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{zone02}}</span>
             </div>
             <div class="bar-63"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #ff4136; grid-row-start: 63; grid-row-end: 101;">
-                <span
-                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">38</span>
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #02c139; grid-row-start: 101; grid-row-end: 63;">
+                <!-- TODO: please replace the grid-row-end with the actual value -->
+                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{zone03}}</span>
             </div>
             <div class="bar-11"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #e2a41e; grid-row-start: 11; grid-row-end: 101;">
-                <span
-                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">90</span>
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #ff8a16; grid-row-start: 101; grid-row-end: 11;">
+                <!-- TODO: please replace the grid-row-end with the actual value -->
+                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{zone04}}</span>
             </div>
             <div class="bar-46"
-                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #ff4136; grid-row-start: 46; grid-row-end: 101;">
-                <span
-                    style="position: relative; top:-20px;text-align: center; left:35%; font-size: large; font-weight: bolder;">55</span>
+                style="border-radius: 5px 5px 0 0; transition: all .6s ease; background-color: #fa3b08; grid-row-start: 101; grid-row-end: 46;">
+                <!-- TODO: please replace the grid-row-end with the actual value -->
+                <span style="position: relative; top:-20px;text-align: center; left:40%; font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{zone05}}</span>
             </div>
 
         </div>
         <span style="text-align: center;">
-            <p style="text-transform: uppercase;margin-top: 0%;">minutes per zone</p>
+            <p style="text-transform: uppercase;margin-top: 0%;font-family: Helvetica;
+            font-size: 22px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: 4px;
+            color: #333333;">minutes per zone</p>
         </span>
-        <div style="grid-column-gap: 5px;">
-            <div style="flex: 1 0 50%; grid-column-gap: 5px;">
+        <hr style="height: 1px;
+        border: solid 1px #e6e6e6;margin:27px 0px">
+        <div>
+            <div style="display: flex;flex-direction: row;justify-content: center;">
                 <div
-                    style="background-color: grey; width: 150px; position: relative; float: left; margin-left: 10%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
-                    <b>1:21:22</b>
-                    <p style="text-transform: uppercase;">duration</p>
+                    style="background-color: #f5f5f5; width: 265px;
+                    height: 200px; padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px; margin-right: 39.2px;">
+                    <img src="" alt="duration-icon" style="width: 48.3px;
+                    height: 55px;
+                    background-color: #ff5903;">
+                    <span style="font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{duration}}</span>
+                    <p style="text-transform: uppercase;opacity: 0.5;
+                    font-family: Helvetica;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.09;
+                    letter-spacing: 4px;
+                    color: #333333;">duration</p>
                 </div>
-                <div
-                    style="background-color: grey; width: 150px; position: relative; float: right;margin-right: 11%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
-                    <b>50</b>
-                    <p style="text-transform: uppercase;">points</p>
+                <div style="background-color: #f5f5f5; width: 265px;
+                    height: 200px; padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;">
+                    <img src="" alt="points-icon" style="width: 55px;
+                    height: 55px;
+                    background-color: #ff5903;">
+                    <span style="font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{points}}</span>
+                    <p style="text-transform: uppercase;opacity: 0.5;
+                    font-family: Helvetica;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.09;
+                    letter-spacing: 4px;
+                    color: #333333;">points</p>
                 </div>
 
             </div>
-            <div style="flex: 1 0 50%; margin-top: 5px; grid-column-gap: 5px;">
-                    <div
-                        style="background-color: grey; width: 150px; position: relative; float: left; margin-left: 10%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
-                        <b>110</b>
-                        <p style="text-transform: uppercase;">Average hr</p>
-                    </div>
-                    <div
-                        style="background-color: grey; width: 150px; position: relative; float: right;margin-right: 11%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
-                        <b>178</b>
-                        <p style="text-transform: uppercase;">peak hr</p>
-                    </div>
-    
+            <div style="display: flex;flex-direction: row;justify-content: center;">
+                <div
+                    style="background-color: #f5f5f5; width: 265px;
+                    height: 200px; padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;margin-right: 39.2px;">
+                    <img src="" alt="avg-hr-icon" style="width: 59.6px;
+                    height: 55px;
+                    background-color: #ff5903;">
+                    <span style="font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{avghr}}</span>
+                    <p style="text-transform: uppercase;opacity: 0.5;
+                    font-family: Helvetica;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.09;
+                    letter-spacing: 4px;
+                    color: #333333;">Average hr</p>
                 </div>
-                <div style="flex: 1 0 50%; margin-top: 5px; grid-column-gap: 5px;">
-                        <div
-                            style="background-color: grey; width: 150px; position: relative; float: left; margin-left: 10%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
-                            <b>400</b>
-                            <p style="text-transform: uppercase;">calories</p>
-                        </div>
-                        <div
-                            style="background-color: grey; width: 150px; position: relative; float: right;margin-right: 11%;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 10px;">
-                            <b>2445</b>
-                            <p style="text-transform: uppercase;">steps</p>
-                        </div>
-        
-                    </div>
+                <div style="background-color: #f5f5f5; width: 265px;
+                    height: 200px;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;">
+                    <img src="" alt="peak-hr-icon" style="width: 55px;
+                    height: 55px;
+                    background-color: #ff5903;">
+                    <span style="font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{peakhr}}</span>
+                    <p style="text-transform: uppercase;opacity: 0.5;
+                    font-family: Helvetica;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.09;
+                    letter-spacing: 4px;
+                    color: #333333;">peak hr</p>
+                </div>
+
+            </div>
+            <div style="display: flex;flex-direction: row;justify-content: center;">
+                <div
+                    style="background-color: #f5f5f5; width: 265px;
+                    height: 200px;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;margin-right: 39.2px;">
+                    <img src="" alt="calories-icon" style="width: 38.1px;
+                    height: 55px;
+                    background-color: #ff5903;">
+                    <span style="font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{calories}}</span>
+                    <p style="text-transform: uppercase;opacity: 0.5;
+                    font-family: Helvetica;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.09;
+                    letter-spacing: 4px;
+                    color: #333333;">calories</p>
+                </div>
+                <div style="background-color: #f5f5f5; width: 265px;
+                    height: 200px;padding:10px; text-align:center;border-radius: 5px;margin-bottom: 25px;">
+                    <img src="" alt="steps-icon" style="width: 61.9px;
+                    height: 55px;
+                    background-color: #ff5903;">
+                    <span style="font-family: Helvetica;
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #333333;">{{steps}}</span>
+                    <p style="text-transform: uppercase;opacity: 0.5;
+                    font-family: Helvetica;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.09;
+                    letter-spacing: 4px;
+                    color: #333333;">steps</p>
+                </div>
+
+            </div>
         </div>
-        
-        
+
+        <hr style="height: 1px;
+border: solid 1px #e6e6e6;">
+        <div style="display: flex;flex-direction: row;justify-content: center;">
+            <a href="http://workoutcompanions.app/oz/learnmore" style="font-family: Helvetica;
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.09;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #5c5c5c;">learn more</a>
+        </div>
+        <div style="display: flex;flex-direction: row;justify-content: center;margin-top: 80px;">
+            <a type="button" href="http://workoutcompanions.app/oz/invitefriend" style="width: 350px;
+    height: 40px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    text-align:center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.2;
+  letter-spacing: 3.33px;
+  text-align: center;
+  color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);">invite a friend</a>
+        </div>
+
+        <div style="display: flex;flex-direction: row;justify-content: center;margin-top: 10px;">
+            <a href="http://workoutcompanions.app/oz/unsubscribe" style="font-family: Helvetica;
+font-size: 18px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 0.94;
+letter-spacing: normal;
+text-align: center;
+text-decoration: none;
+text-transform: capitalize;
+color: #898989;">unsubscribe</a>
+        </div>
+
     </div>
 </body>
 

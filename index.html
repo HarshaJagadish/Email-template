@@ -14,28 +14,44 @@
 
         html,
         body {
-            margin: 0;
             background-color: #fff;
             display: flex;
             justify-content: center;
         }
+        @supports(order) {
+    .parent {
+        display:flex;
+    }
+
+    .child-to-reorder {
+        order:1;
+    }
+}
+@media (max-width: 600px) {
+   body {
+       margin: 20px;
+   }
+}
+
+
     </style>
 </head>
 
-<body style="margin: 0; background-color: #fff; display: flex; justify-content: center; box-sizing: border-box;">
-    <div style="flex:1 0 50%">
+<body style="margin: 20px; background-color: #fff; display: flex; justify-content: center; box-sizing: border-box;justify-content: space-around;">
+    <div style="flex:1 0 50%; margin: 20px;justify-content: space-evenly;">
 
         <div class="break"
             style="border-radius: 30px;
-            background-color: #f5f5f5;text-align: left;flex-shrink: 0; flex:0 1 100%; padding: 20px 33px;clear: both;height: 17%;display: flex;flex-direction: row;flex-wrap:nowrap;flex-grow: 0;
-   flex-shrink: 1;
-    ">
-            <div style="min-width: 120px;min-height: 120px;">
-                <img src="" alt="orange-theory-logo">
+            background-color: #f5f5f5;text-align: left;flex-shrink: 0; flex:0 1 100%; padding: 20px 33px;clear: both;display: flex;flex-direction: row;flex-wrap:wrap;flex-grow: 0;flex-shrink: 1;justify-content: space-around;margin: 25px;">
+            <div style="min-width: 120px;min-height: 120px;display: flex; flex-direction: column;justify-content: space-around;">
+                <div style="vertical-align: middle;">
+                <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otficon.png" alt="orange-theory-logo">
+
+                </div>
             </div>
-            <div>
+            <div style="margin-left: 35px;justify-content: space-around;">
                 <p style="font-family: Helvetica;
-                        font-size: 20px;
+                        font-size: 2em;
                         font-weight: bold;
                         font-stretch: normal;
                         font-style: normal;
@@ -46,7 +62,7 @@
                         display: block;
                         color: #ff8a16;">orange theory</p>
                 <p style="font-family: Helvetica;
-                        font-size: 30px;
+                        font-size: 1rem;
                         font-weight: bold;
                         font-stretch: normal;
                         font-style: normal;
@@ -57,7 +73,7 @@
                         display: block;
                       ">{{companionid}} Workout Companion</p>
                 <p style="font-family: Helvetica;
-                        font-size: 24px;
+                        font-size: 1rem;
                         font-weight: normal;
                         font-stretch: normal;
                         font-style: normal;
@@ -70,12 +86,12 @@
 
         </div>
         <div class="chart"
-            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; padding: 15px 10px;flex-shrink: 0;justify-content: center;text-align: center;margin-top:25px;">
-            <!-- TODO: please replace the grid-row-end with the actual value -->
+            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; padding: 15px 10px;flex-shrink: 0;justify-content: space-around;text-align: center;margin:25px;">
+            <!-- Done: please replace the grid-row-end with the actual value -->
             <div class="bar-45"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #bbc5c5; grid-row-start: 101; grid-row-end: 45;">
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #bbc5c5; grid-row-start: {{zone01}}; grid-row-end: 101;">
                 <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -85,10 +101,10 @@
                     color: #333333;padding: 5px;">{{zone01}}</span>
             </div>
             <div class="bar-100"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #0b9cec; grid-row-start: 101; grid-row-end: 100;">
-                <!-- TODO: please replace the grid-row-end with the actual value -->
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #0b9cec; grid-row-start: {{zone02}}; grid-row-end: 101;">
+                <!-- Done: please replace the grid-row-end with the actual value -->
                 <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -98,10 +114,10 @@
                     color: #333333;">{{zone02}}</span>
             </div>
             <div class="bar-63"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #02c139; grid-row-start: 101; grid-row-end: 63;">
-                <!-- TODO: please replace the grid-row-end with the actual value -->
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #02c139; grid-row-start: {{zone03}}; grid-row-end: 101;">
+                <!-- Done: please replace the grid-row-end with the actual value -->
                 <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -111,10 +127,10 @@
                     color: #333333;">{{zone03}}</span>
             </div>
             <div class="bar-11"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #ff8a16; grid-row-start: 101; grid-row-end: 11;">
-                <!-- TODO: please replace the grid-row-end with the actual value -->
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #ff8a16; grid-row-start: {{zone04}}; grid-row-end: 101;">
+                <!-- Done: please replace the grid-row-end with the actual value -->
                 <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -124,10 +140,10 @@
                     color: #333333;">{{zone04}}</span>
             </div>
             <div class="bar-46"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #fa3b08; grid-row-start: 101; grid-row-end: 46;">
-                <!-- TODO: please replace the grid-row-end with the actual value -->
+                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #fa3b08; grid-row-start: {{zone05}}; grid-row-end: 101;">
+                <!-- Done: please replace the grid-row-end with the actual value -->
                 <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -138,6 +154,7 @@
             </div>
 
         </div>
+
         <span style="text-align: center;">
             <p style="text-transform: uppercase;margin-top: 0%;font-family: Helvetica;
             font-size: 22px;
@@ -148,18 +165,30 @@
             letter-spacing: 4px;
             color: #333333;">minutes per zone</p>
         </span>
+
         <hr style="height: 1px;
         border: solid 1px #e6e6e6;margin:27px 0px">
-        <div>
-            <div style="display: flex;flex-direction: row;justify-content: center;">
+
+
+        <div style="  padding: 0;
+        margin: 0;
+        list-style: none;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;">
                 <div
                     style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px; margin-right: 39.2px;">
-                    <img src="" alt="duration-icon" style="width: 48.3px;
-                    height: 55px;
-                    background-color: #ff5903;">
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px;margin-right:5px ; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
+                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png" alt="duration-icon" style="width: 55px;
+                        height: 55px;
+                        "></div>
+                    
                     <span style="font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -169,7 +198,7 @@
                     color: #333333;">{{duration}}</span>
                     <p style="text-transform: uppercase;opacity: 0.5;
                     font-family: Helvetica;
-                    font-size: 22px;
+                    font-size: 1em;
                     font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
@@ -177,13 +206,15 @@
                     letter-spacing: 4px;
                     color: #333333;">duration</p>
                 </div>
-                <div style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;">
-                    <img src="" alt="points-icon" style="width: 55px;
-                    height: 55px;
-                    background-color: #ff5903;">
+                <div
+                    style="background-color: #f5f5f5; width: 265px;
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px;margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
+                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png" alt="duration-icon" style="width: 55px;
+                        height: 55px;
+                        "></div>
+                    
                     <span style="font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -193,7 +224,7 @@
                     color: #333333;">{{points}}</span>
                     <p style="text-transform: uppercase;opacity: 0.5;
                     font-family: Helvetica;
-                    font-size: 22px;
+                    font-size: 1em;
                     font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
@@ -201,17 +232,16 @@
                     letter-spacing: 4px;
                     color: #333333;">points</p>
                 </div>
-
-            </div>
-            <div style="display: flex;flex-direction: row;justify-content: center;">
+                
                 <div
                     style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;margin-right: 39.2px;">
-                    <img src="" alt="avg-hr-icon" style="width: 59.6px;
-                    height: 55px;
-                    background-color: #ff5903;">
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
+                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png" alt="duration-icon" style="width: 55px;
+                        height: 55px;
+                        "></div>
+                    
                     <span style="font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -221,7 +251,7 @@
                     color: #333333;">{{avghr}}</span>
                     <p style="text-transform: uppercase;opacity: 0.5;
                     font-family: Helvetica;
-                    font-size: 22px;
+                    font-size: 1em;
                     font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
@@ -229,13 +259,16 @@
                     letter-spacing: 4px;
                     color: #333333;">Average hr</p>
                 </div>
-                <div style="background-color: #f5f5f5; width: 265px;
-                    height: 200px;padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;">
-                    <img src="" alt="peak-hr-icon" style="width: 55px;
-                    height: 55px;
-                    background-color: #ff5903;">
+
+                <div
+                    style="background-color: #f5f5f5; width: 265px;
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
+                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png" alt="duration-icon" style="width: 55px;
+                        height: 55px;
+                        "></div>
+                    
                     <span style="font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -245,7 +278,7 @@
                     color: #333333;">{{peakhr}}</span>
                     <p style="text-transform: uppercase;opacity: 0.5;
                     font-family: Helvetica;
-                    font-size: 22px;
+                    font-size: 1em;
                     font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
@@ -254,16 +287,15 @@
                     color: #333333;">peak hr</p>
                 </div>
 
-            </div>
-            <div style="display: flex;flex-direction: row;justify-content: center;">
                 <div
                     style="background-color: #f5f5f5; width: 265px;
-                    height: 200px;padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;margin-right: 39.2px;">
-                    <img src="" alt="calories-icon" style="width: 38.1px;
-                    height: 55px;
-                    background-color: #ff5903;">
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
+                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png" alt="duration-icon" style="width: 55px;
+                        height: 55px;
+                        "></div>
+                    
                     <span style="font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -273,7 +305,7 @@
                     color: #333333;">{{calories}}</span>
                     <p style="text-transform: uppercase;opacity: 0.5;
                     font-family: Helvetica;
-                    font-size: 22px;
+                    font-size: 1em;
                     font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
@@ -281,13 +313,16 @@
                     letter-spacing: 4px;
                     color: #333333;">calories</p>
                 </div>
-                <div style="background-color: #f5f5f5; width: 265px;
-                    height: 200px;padding:10px; text-align:center;border-radius: 50px;margin-bottom: 25px;">
-                    <img src="" alt="steps-icon" style="width: 61.9px;
-                    height: 55px;
-                    background-color: #ff5903;">
+
+                <div
+                    style="background-color: #f5f5f5; width: 265px;
+                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
+                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png" alt="duration-icon" style="width: 55px;
+                        height: 55px;
+                        "></div>
+                    
                     <span style="font-family: Helvetica;
-                    font-size: 45px;
+                    font-size: 3em;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;
@@ -297,7 +332,7 @@
                     color: #333333;">{{steps}}</span>
                     <p style="text-transform: uppercase;opacity: 0.5;
                     font-family: Helvetica;
-                    font-size: 22px;
+                    font-size: 1em;
                     font-weight: normal;
                     font-stretch: normal;
                     font-style: normal;
@@ -306,13 +341,13 @@
                     color: #333333;">steps</p>
                 </div>
 
-            </div>
         </div>
 
-        <hr style="height: 1px;
-border: solid 1px #e6e6e6;">
+        <hr style="height: 1px;border: solid 1px #e6e6e6;">
+
+
         <div style="display: flex;flex-direction: row;justify-content: center;">
-            <a href="http://workoutcompanions.app/oz/learnmore" style="font-family: Helvetica;
+            <a href="https://www.workoutcompanions.app/orange-theory-zones-learn-more" style="font-family: Helvetica;
         font-size: 22px;
         font-weight: bold;
         font-stretch: normal;
@@ -323,28 +358,32 @@ border: solid 1px #e6e6e6;">
         text-transform: uppercase;
         color: #5c5c5c;">learn more</a>
         </div>
-        <div style="display: flex;flex-direction: row;justify-content: center;margin-top: 80px;">
-            <a type="button" href="http://workoutcompanions.app/oz/invitefriend" style="width: 350px;
-    height: 40px;
-    border-radius: 100px;
-    text-transform: uppercase;
-    text-align:center;
-    vertical-align: middle;
-    text-decoration: none;
-    font-family: Helvetica;
-  font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.2;
-  letter-spacing: 3.33px;
-  text-align: center;
-  color: #ffffff;
-    background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);">invite a friend</a>
+        <div style="display: flex;flex-direction: row;justify-content: space-around;margin-top: 80px;">
+            <div>
+                    <a type="button" href="https://www.workoutcompanions.app/orange-theory-zones-invite-friends" style="width: 350px;
+                    height: 40px;
+                    border-radius: 100px;
+                    text-transform: uppercase;
+                    text-align:center;
+                    vertical-align: middle;
+                    text-decoration: none;
+                    font-family: Helvetica;
+                  font-size: 20px;
+                  font-weight: bold;
+                  font-stretch: normal;
+                  font-style: normal;
+                  line-height: 2.2;
+                  letter-spacing: 3.33px;
+                  text-align: center;
+                  color: #ffffff;
+                  padding: 10px;
+                    background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);">invite a friend</a>
+            </div>
+            
         </div>
 
         <div style="display: flex;flex-direction: row;justify-content: center;margin-top: 10px;">
-            <a href="http://workoutcompanions.app/oz/unsubscribe" style="font-family: Helvetica;
+            <a href="https://www.workoutcompanions.app/orange-theory-zones-unsubscribe" style="font-family: Helvetica;
 font-size: 18px;
 font-weight: normal;
 font-stretch: normal;

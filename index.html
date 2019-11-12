@@ -17,12 +17,444 @@
             background-color: #fff;
             display: flex;
             justify-content: center;
+            margin: 0px auto;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            justify-content: space-around;
+        }
+
+        .main1 {
+            flex: 1 0 50%;
+            margin: 20px;
+            justify-content: space-evenly;
+        }
+
+        .break {
+            border-radius: 30px;
+            background-color: #f5f5f5;
+            text-align: left;
+            flex-shrink: 0;
+            padding: 20px 33px;
+            clear: both;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 0;
+            flex-shrink: 1;
+            justify-content: space-around;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .mainLogoContainer {
+            min-width: 120px;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-right: 20px;
+        }
+
+        .logoContainer {
+            vertical-align: middle;
+        }
+
+        .mainLogo {
+            width: 120px;
+            height: 120px;
+        }
+
+        .headerTextContainer {
+            justify-content: space-around;
+            vertical-align: middle;
+            margin-top: 18px;
+        }
+
+        .headerTextFirstRow {
+            font-family: Helvetica;
+            font-size: 1em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            text-align: left;
+            text-transform: uppercase;
+            display: block;
+            color: #ff8a16;
+        }
+
+        .headerTextSecondRow {
+            font-family: Helvetica;
+            font-size: 1em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-transform: capitalize;
+            color: #333333;
+            display: block;
+        }
+
+        .headerTextThirdRow {
+            font-family: Helvetica;
+            font-size: 1em;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 3px;
+            color: #333333;
+            display: block;
+        }
+
+        .headerTextDivider {
+            background-color: #ff7307;
+            border-width: 20px;
+            border-radius: 50%;
+            height: 4px;
+            width: 4px;
+            display: inline-block;
+        }
+
+        .chart {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(100, 1fr);
+            grid-column-gap: 5px;
+            height: 40vh;
+            padding: 15px 10px;
+            flex-shrink: 0;
+            justify-content: space-around;
+            text-align: center;
+            margin: 25px;
+        }
+
+        .bar-45 {
+            border-radius: 9.2px 9.2px 0 0;
+            transition: all .6s ease;
+            background-color: #bbc5c5;
+
+            grid-row-start: {
+                    {
+                    zone01
+                }
+            }
+
+            ;
+            grid-row-end: 101;
+        }
+
+        .zoneOne {
+            position: relative;
+            top: -50px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333333;
+            padding: 5px;
+        }
+
+        .bar-100 {
+            border-radius: 9.2px 9.2px 0 0;
+            transition: all .6s ease;
+            background-color: #0b9cec;
+
+            grid-row-start: {
+                    {
+                    zone02
+                }
+            }
+
+            ;
+            grid-row-end: 101;
+        }
+
+        .zoneTwo {
+            position: relative;
+            top: -50px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .bar-63 {
+            border-radius: 9.2px 9.2px 0 0;
+            transition: all .6s ease;
+            background-color: #02c139;
+
+            grid-row-start: {
+                    {
+                    zone03
+                }
+            }
+
+            ;
+            grid-row-end: 101;
+        }
+
+        .zoneThree {
+            position: relative;
+            top: -50px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .bar-11 {
+            border-radius: 9.2px 9.2px 0 0;
+            transition: all .6s ease;
+            background-color: #ff8a16;
+
+            grid-row-start: {
+                    {
+                    zone04
+                }
+            }
+
+            ;
+            grid-row-end: 101;
+        }
+
+        .zoneFour {
+            position: relative;
+            top: -50px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .bar-46 {
+            border-radius: 9.2px 9.2px 0 0;
+            transition: all .6s ease;
+            background-color: #fa3b08;
+
+            grid-row-start: {
+                    {
+                    zone05
+                }
+            }
+
+            ;
+            grid-row-end: 101;
+        }
+
+        .zoneFive {
+            position: relative;
+            top: -50px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .headerTwoContainer {
+            text-align: center;
+        }
+
+        .headerTwoContent {
+            text-transform: uppercase;
+            margin-top: 0%;
+            font-family: Helvetica;
+            font-size: 22px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: 4px;
+            margin: 5px;
+            color: #333333;
+        }
+
+        .dividerOne {
+            height: 1px;
+            border: solid 1px #e6e6e6;
+            margin: 27px 0px;
+        }
+
+        .EmailBodycontainer {
+            max-width: 600px;
+            margin: 0 auto
+        }
+
+        .BodyContainer {
+            max-width: 600px;
+            padding: 10px;
+            margin: 0;
+            list-style: none;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: space-around;
+
+        }
+
+        .bodyRow {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .bodyContent {
+            background-color: #f5f5f5;
+            width: 80%;
+            min-width: 150px;
+            min-height: 150px;
+            height: 80%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 50px;
+            margin-top: 25px;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-basis: auto;
+            padding: 5px;
+        }
+
+        .bodyIcon {
+            width: 55px;
+            height: 55px;
+        }
+
+        .bodyRowOne {
+            font-family: Helvetica;
+            font-size: 2em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            color: #333333;
+        }
+
+        .bodyRowTwo {
+            text-transform: uppercase;
+            opacity: 0.5;
+            font-family: Helvetica;
+            font-size: 1em;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: 4px;
+            color: #333333;
+        }
+
+        .learnMore {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .learMoreText {
+            font-family: Helvetica;
+            font-size: 22px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.09;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #5c5c5c;
+        }
+
+        .inviteFriendContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 80px;
+        }
+
+        .inviteFriendText {
+
+            height: 40px;
+            border-radius: 100px;
+            text-transform: uppercase;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            font-family: Helvetica;
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.2;
+            letter-spacing: 3.33px;
+            text-align: center;
+            color: #ffffff;
+            padding: 15px;
+            background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);
+        }
+
+        .unsubscribeContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .unsubscribeText {
+            font-family: Helvetica;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.94;
+            letter-spacing: normal;
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #898989;
         }
         @supports(order) {
     .parent {
         display:flex;
     }
-
     .child-to-reorder {
         order:1;
     }
@@ -32,368 +464,133 @@
        margin: 20px;
    }
 }
-
-
     </style>
 </head>
 
-<body style="margin: 20px; background-color: #fff; display: flex; justify-content: center; box-sizing: border-box;justify-content: space-around;">
-    <div style="flex:1 0 50%; margin: 20px;justify-content: space-evenly;">
-
-        <div class="break"
-            style="border-radius: 30px;
-            background-color: #f5f5f5;text-align: left;flex-shrink: 0; flex:0 1 100%; padding: 20px 33px;clear: both;display: flex;flex-direction: row;flex-wrap:wrap;flex-grow: 0;flex-shrink: 1;justify-content: space-around;margin: 25px;">
-            <div style="min-width: 120px;min-height: 120px;display: flex; flex-direction: column;justify-content: space-around;">
-                <div style="vertical-align: middle;">
-                <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otficon.png" alt="orange-theory-logo">
+<body>
+    <div class="main1">
+        <div class="break">
+            <div class="mainLogoContainer">
+                <div class="logoContainer">
+                    <img class="mainLogo"
+                        src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otficon.png"
+                        alt="orange-theory-logo">
 
                 </div>
             </div>
-            <div style="margin-left: 35px;justify-content: space-around;">
-                <p style="font-family: Helvetica;
-                        font-size: 2em;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: 1;
-                        letter-spacing: 3.33px;
-                        text-align: left;
-                        text-transform: uppercase;
-                        display: block;
-                        color: #ff8a16;">orange theory</p>
-                <p style="font-family: Helvetica;
-                        font-size: 1rem;
-                        font-weight: bold;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: normal;
-                        text-transform: capitalize;
-                        color: #333333;
-                        display: block;
-                      ">{{companionid}} Workout Companion</p>
-                <p style="font-family: Helvetica;
-                        font-size: 1rem;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: 3px;
-                        color: #333333;
-                        display: block;
-                      ">{{date}} <span style="color:#ff7307">.</span> {{time}}</p>
+            <div class="headerTextContainer">
+                <p class="headerTextFirstRow">orange theory</p>
+                <p class="headerTextSecondRow">Workout Companion</p>
+                <p class="headerTextThirdRow">{{date}} <span class="headerTextDivider"></span> {{time}}</p>
             </div>
 
         </div>
-        <div class="chart"
-            style="display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(100, 1fr); grid-column-gap: 5px; height: 40vh; padding: 15px 10px;flex-shrink: 0;justify-content: space-around;text-align: center;margin:25px;">
-            <!-- Done: please replace the grid-row-end with the actual value -->
-            <div class="bar-45"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #bbc5c5; grid-row-start: {{zone01}}; grid-row-end: 101;">
-                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;padding: 5px;">{{zone01}}</span>
+        <div class="chart">
+            <div class="bar-45">
+                <span class="zoneOne">{{zone01}}</span>
             </div>
-            <div class="bar-100"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #0b9cec; grid-row-start: {{zone02}}; grid-row-end: 101;">
-                <!-- Done: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{zone02}}</span>
+            <div class="bar-100">
+                <span class="zoneTwo">{{zone02}}</span>
             </div>
-            <div class="bar-63"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #02c139; grid-row-start: {{zone03}}; grid-row-end: 101;">
-                <!-- Done: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{zone03}}</span>
+            <div class="bar-63">
+                <span class="zoneThree">{{zone03}}</span>
             </div>
-            <div class="bar-11"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #ff8a16; grid-row-start: {{zone04}}; grid-row-end: 101;">
-                <!-- Done: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{zone04}}</span>
+            <div class="bar-11">
+                <span class="zoneFour">{{zone04}}</span>
             </div>
-            <div class="bar-46"
-                style="border-radius: 9.2px 9.2px 0 0; transition: all .6s ease; background-color: #fa3b08; grid-row-start: {{zone05}}; grid-row-end: 101;">
-                <!-- Done: please replace the grid-row-end with the actual value -->
-                <span style="position: relative; top:-50px;text-align: center; font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{zone05}}</span>
+            <div class="bar-46">
+                <span class="zoneFive">{{zone05}}</span>
             </div>
 
         </div>
 
-        <span style="text-align: center;">
-            <p style="text-transform: uppercase;margin-top: 0%;font-family: Helvetica;
-            font-size: 22px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.09;
-            letter-spacing: 4px;
-            color: #333333;">minutes per zone</p>
+        <span class="headerTwoContainer">
+            <p class="headerTwoContent">minutes per zone</p>
         </span>
 
-        <hr style="height: 1px;
-        border: solid 1px #e6e6e6;margin:27px 0px">
+        <hr class="dividerOne">
 
+        <div class="EmailBodycontainer">
+            <div class="BodyContainer">
+                <div class="bodyRow">
+                    <div class="bodyContent">
+                        <div class="icon-hide"><img class="bodyIcon"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png"
+                                alt="duration-icon"></div>
 
-        <div style="  padding: 0;
-        margin: 0;
-        list-style: none;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        justify-content: space-around;">
-                <div
-                    style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px;margin-right:5px ; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
-                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png" alt="duration-icon" style="width: 55px;
-                        height: 55px;
-                        "></div>
-                    
-                    <span style="font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{duration}}</span>
-                    <p style="text-transform: uppercase;opacity: 0.5;
-                    font-family: Helvetica;
-                    font-size: 1em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.09;
-                    letter-spacing: 4px;
-                    color: #333333;">duration</p>
-                </div>
-                <div
-                    style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px;margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
-                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png" alt="duration-icon" style="width: 55px;
-                        height: 55px;
-                        "></div>
-                    
-                    <span style="font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{points}}</span>
-                    <p style="text-transform: uppercase;opacity: 0.5;
-                    font-family: Helvetica;
-                    font-size: 1em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.09;
-                    letter-spacing: 4px;
-                    color: #333333;">points</p>
-                </div>
-                
-                <div
-                    style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
-                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png" alt="duration-icon" style="width: 55px;
-                        height: 55px;
-                        "></div>
-                    
-                    <span style="font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{avghr}}</span>
-                    <p style="text-transform: uppercase;opacity: 0.5;
-                    font-family: Helvetica;
-                    font-size: 1em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.09;
-                    letter-spacing: 4px;
-                    color: #333333;">Average hr</p>
+                        <span class="bodyRowOne">{{duration}}</span>
+                        <p class="bodyRowTwo">duration</p>
+                    </div>
+                    <div class="bodyContent">
+                        <div class="icon-hide"><img class="bodyIcon"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png"
+                                alt="duration-icon"></div>
+
+                        <span class="bodyRowOne">{{points}}</span>
+                        <p class="bodyRowTwo">points</p>
+                    </div>
                 </div>
 
-                <div
-                    style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
-                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png" alt="duration-icon" style="width: 55px;
-                        height: 55px;
-                        "></div>
-                    
-                    <span style="font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{peakhr}}</span>
-                    <p style="text-transform: uppercase;opacity: 0.5;
-                    font-family: Helvetica;
-                    font-size: 1em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.09;
-                    letter-spacing: 4px;
-                    color: #333333;">peak hr</p>
+                <div class="bodyRow">
+                    <div class="bodyContent">
+                        <div class="icon-hide"><img class="bodyIcon"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png"
+                                alt="duration-icon"></div>
+
+                        <span class="bodyRowOne">{{avghr}}</span>
+                        <p class="bodyRowTwo">Average hr</p>
+                    </div>
+
+                    <div class="bodyContent">
+                        <div class="icon-hide"><img class="bodyIcon"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png"
+                                alt="duration-icon"></div>
+
+                        <span class="bodyRowOne">{{peakhr}}</span>
+                        <p class="bodyRowTwo">peak hr</p>
+                    </div>
                 </div>
+                <div class="bodyRow">
+                    <div class="bodyContent">
+                        <div class="icon-hide"><img class="bodyIcon"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png"
+                                alt="duration-icon"></div>
 
-                <div
-                    style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
-                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png" alt="duration-icon" style="width: 55px;
-                        height: 55px;
-                        "></div>
-                    
-                    <span style="font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{calories}}</span>
-                    <p style="text-transform: uppercase;opacity: 0.5;
-                    font-family: Helvetica;
-                    font-size: 1em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.09;
-                    letter-spacing: 4px;
-                    color: #333333;">calories</p>
+                        <span class="bodyRowOne">{{calories}}</span>
+                        <p class="bodyRowTwo">calories</p>
+                    </div>
+
+                    <div class="bodyContent">
+                        <div class="icon-hide"><img class="bodyIcon"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png"
+                                alt="duration-icon"></div>
+
+                        <span class="bodyRowOne">{{steps}}</span>
+                        <p class="bodyRowTwo">steps</p>
+                    </div>
                 </div>
-
-                <div
-                    style="background-color: #f5f5f5; width: 265px;
-                    height: 200px; padding:10px; text-align:center;border-radius: 50px;margin-top: 25px; margin-right:5px; display: flex; flex-direction: column;justify-content:space-around;flex-basis: auto;">
-                    <div class="icon-hide"><img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png" alt="duration-icon" style="width: 55px;
-                        height: 55px;
-                        "></div>
-                    
-                    <span style="font-family: Helvetica;
-                    font-size: 3em;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #333333;">{{steps}}</span>
-                    <p style="text-transform: uppercase;opacity: 0.5;
-                    font-family: Helvetica;
-                    font-size: 1em;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.09;
-                    letter-spacing: 4px;
-                    color: #333333;">steps</p>
-                </div>
-
-        </div>
-
-        <hr style="height: 1px;border: solid 1px #e6e6e6;">
-
-
-        <div style="display: flex;flex-direction: row;justify-content: center;">
-            <a href="https://www.workoutcompanions.app/orange-theory-zones-learn-more" style="font-family: Helvetica;
-        font-size: 22px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.09;
-        letter-spacing: 2px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #5c5c5c;">learn more</a>
-        </div>
-        <div style="display: flex;flex-direction: row;justify-content: space-around;margin-top: 80px;">
-            <div>
-                    <a type="button" href="https://www.workoutcompanions.app/orange-theory-zones-invite-friends" style="width: 350px;
-                    height: 40px;
-                    border-radius: 100px;
-                    text-transform: uppercase;
-                    text-align:center;
-                    vertical-align: middle;
-                    text-decoration: none;
-                    font-family: Helvetica;
-                  font-size: 20px;
-                  font-weight: bold;
-                  font-stretch: normal;
-                  font-style: normal;
-                  line-height: 2.2;
-                  letter-spacing: 3.33px;
-                  text-align: center;
-                  color: #ffffff;
-                  padding: 10px;
-                    background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);">invite a friend</a>
             </div>
-            
         </div>
 
-        <div style="display: flex;flex-direction: row;justify-content: center;margin-top: 10px;">
-            <a href="https://www.workoutcompanions.app/orange-theory-zones-unsubscribe" style="font-family: Helvetica;
-font-size: 18px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 0.94;
-letter-spacing: normal;
-text-align: center;
-text-decoration: none;
-text-transform: capitalize;
-color: #898989;">unsubscribe</a>
+
+        <hr class="dividerOne">
+
+
+        <div class="learnMore">
+            <a class="learMoreText" href="https://www.workoutcompanions.app/orange-theory-zones-learn-more">learn
+                more</a>
+        </div>
+        <div class="inviteFriendContainer">
+            <div>
+                <a class="inviteFriendText" type="button"
+                    href="https://www.workoutcompanions.app/orange-theory-zones-invite-friends">invite a friend</a>
+            </div>
+
+        </div>
+
+        <div class="unsubscribeContainer">
+            <a class="unsubscribeText" href="https://www.workoutcompanions.app/orange-theory-zones-unsubscribe"
+                style="">unsubscribe</a>
         </div>
 
     </div>

@@ -116,6 +116,8 @@
             height: 4px;
             width: 4px;
             display: inline-block;
+            position: relative;
+            top: -3px;
         }
 
         .chart {
@@ -132,160 +134,89 @@
         }
 
         .bar-45 {
-            border-radius: 9.2px 9.2px 0 0;
+            border-radius: 9.2px;
             transition: all .6s ease;
             background-color: #bbc5c5;
-
-            grid-row-start: {
-                    {
-                    zone01
-                }
-            }
-
-            ;
+            grid-row-start: {{zone01}};
             grid-row-end: 101;
+        }
+
+        .zone {
+            position: relative;
+            top: -50px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 5px;
+
+
         }
 
         .zoneOne {
-            position: relative;
-            top: -50px;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            margin-bottom: 5px;
             color: #333333;
-            padding: 5px;
-        }
-
-        .bar-100 {
-            border-radius: 9.2px 9.2px 0 0;
-            transition: all .6s ease;
-            background-color: #0b9cec;
-
-            grid-row-start: {
-                    {
-                    zone02
-                }
-            }
-
-            ;
-            grid-row-end: 101;
         }
 
         .zoneTwo {
-            position: relative;
-            top: -50px;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            margin-bottom: 5px;
             color: #333333;
-        }
-
-        .bar-63 {
-            border-radius: 9.2px 9.2px 0 0;
-            transition: all .6s ease;
-            background-color: #02c139;
-
-            grid-row-start: {
-                    {
-                    zone03
-                }
-            }
-
-            ;
-            grid-row-end: 101;
         }
 
         .zoneThree {
-            position: relative;
-            top: -50px;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            margin-bottom: 5px;
             color: #333333;
-        }
-
-        .bar-11 {
-            border-radius: 9.2px 9.2px 0 0;
-            transition: all .6s ease;
-            background-color: #ff8a16;
-
-            grid-row-start: {
-                    {
-                    zone04
-                }
-            }
-
-            ;
-            grid-row-end: 101;
         }
 
         .zoneFour {
-            position: relative;
-            top: -50px;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            margin-bottom: 5px;
             color: #333333;
-        }
-
-        .bar-46 {
-            border-radius: 9.2px 9.2px 0 0;
-            transition: all .6s ease;
-            background-color: #fa3b08;
-
-            grid-row-start: {
-                    {
-                    zone05
-                }
-            }
-
-            ;
-            grid-row-end: 101;
         }
 
         .zoneFive {
-            position: relative;
-            top: -50px;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            margin-bottom: 5px;
             color: #333333;
         }
+
+        .bar-100 {
+            border-radius: 9.2px;
+            transition: all .6s ease;
+            background-color: #0b9cec;
+            grid-row-start: {{zone02}};
+            grid-row-end: 101;
+        }
+
+
+
+        .bar-63 {
+            border-radius: 9.2px;
+            transition: all .6s ease;
+            background-color: #02c139;
+            grid-row-start: {{zone03}};
+            grid-row-end: 101;
+        }
+
+
+
+        .bar-11 {
+            border-radius: 9.2px;
+            transition: all .6s ease;
+            background-color: #ff8a16;
+            grid-row-start: {{zone04}};
+            grid-row-end: 101;
+        }
+
+
+
+        .bar-46 {
+            border-radius: 9.2px;
+            transition: all .6s ease;
+            background-color: #fa3b08;
+            grid-row-start: {{zone05}};
+            grid-row-end: 101;
+        }
+
+
 
         .headerTwoContainer {
             text-align: center;
@@ -313,7 +244,10 @@
 
         .EmailBodycontainer {
             max-width: 600px;
-            margin: 0 auto
+            margin: 0 auto;
+            padding:20px;
+            display: flex;
+            justify-content: center;
         }
 
         .BodyContainer {
@@ -330,6 +264,18 @@
             justify-content: space-around;
 
         }
+        .container {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 500px;
+            padding: 10px;
+            margin: 0 auto;
+            justify-content: center;
+            /* background-color: blue; */
+        }
+
+        
 
         .bodyRow {
             display: flex;
@@ -338,34 +284,46 @@
 
         .bodyContent {
             background-color: #f5f5f5;
-            width: 80%;
-            min-width: 150px;
-            min-height: 150px;
-            height: 80%;
+            /* width: 80%; */
+            /* min-width: 150px; */
+            /* min-height: 150px; */
+            /* height: 80%; */
             padding: 10px;
             text-align: center;
             border-radius: 50px;
             margin-top: 25px;
             margin-right: 5px;
-            display: flex;
-            flex-direction: column;
+            /* display: flex; */
+            /* flex-direction: column; */
             justify-content: space-around;
-            flex-basis: auto;
+            /* flex-basis: auto; */
             padding: 5px;
         }
 
-        .bodyIcon {
-            width: 55px;
-            height: 55px;
-        }
 
+        .bodybreak {
+  flex-basis: 100%;
+  height: 0;
+}
+        
+@media (min-width:315px) and (max-width:320px)  { 
+            .bodyIcon {
+            width: 3.4em;
+            height: 3.4em;
+        }
+        .container .item {
+            width: 8.25em;
+            height: 8.3em;
+            /* background-color: red; */
+            /* margin: 10px; */
+        }
         .bodyRowOne {
             font-family: Helvetica;
-            font-size: 2em;
+            font-size: 1em;
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;
-            line-height: 1;
+            line-height: 2;
             letter-spacing: normal;
             text-align: center;
             color: #333333;
@@ -375,14 +333,59 @@
             text-transform: uppercase;
             opacity: 0.5;
             font-family: Helvetica;
-            font-size: 1em;
+            font-size: 0.5em;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
-            line-height: 1.09;
+            line-height: 1;
             letter-spacing: 4px;
             color: #333333;
         }
+        }
+/* smartphones, iPhone, portrait 480x320 phones */ 
+        @media (min-width:320px)  { 
+            .bodyIcon {
+            width: 3.4em;
+            height: 3.4em;
+        }
+        .container .item {
+            width: 9.25em;
+            height: 9.3em;
+            /* background-color: red; */
+            /* margin: 10px; */
+        }
+        .bodyRowOne {
+            font-family: Helvetica;
+            font-size: 1em;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: normal;
+            text-align: center;
+            color: #333333;
+        }
+
+        .bodyRowTwo {
+            text-transform: uppercase;
+            opacity: 0.5;
+            font-family: Helvetica;
+            font-size: 0.5em;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: 4px;
+            color: #333333;
+        }
+        }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+       
 
         .learnMore {
             display: flex;
@@ -411,7 +414,6 @@
         }
 
         .inviteFriendText {
-
             height: 40px;
             border-radius: 100px;
             text-transform: uppercase;
@@ -427,7 +429,7 @@
             letter-spacing: 3.33px;
             text-align: center;
             color: #ffffff;
-            padding: 15px;
+            padding: 5px 40px;
             background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);
         }
 
@@ -451,19 +453,25 @@
             text-transform: capitalize;
             color: #898989;
         }
+
+
+        
+
         @supports(order) {
-    .parent {
-        display:flex;
-    }
-    .child-to-reorder {
-        order:1;
-    }
-}
-@media (max-width: 600px) {
-   body {
-       margin: 20px;
-   }
-}
+            .parent {
+                display: flex;
+            }
+
+            .child-to-reorder {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -487,19 +495,19 @@
         </div>
         <div class="chart">
             <div class="bar-45">
-                <span class="zoneOne">{{zone01}}</span>
+                <span class="zone zoneOne">{{zone01}}</span>
             </div>
             <div class="bar-100">
-                <span class="zoneTwo">{{zone02}}</span>
+                <span class="zone zoneTwo">{{zone02}}</span>
             </div>
             <div class="bar-63">
-                <span class="zoneThree">{{zone03}}</span>
+                <span class="zone zoneThree">{{zone03}}</span>
             </div>
             <div class="bar-11">
-                <span class="zoneFour">{{zone04}}</span>
+                <span class="zone zoneFour">{{zone04}}</span>
             </div>
             <div class="bar-46">
-                <span class="zoneFive">{{zone05}}</span>
+                <span class="zone zoneFive">{{zone05}}</span>
             </div>
 
         </div>
@@ -511,64 +519,65 @@
         <hr class="dividerOne">
 
         <div class="EmailBodycontainer">
-            <div class="BodyContainer">
-                <div class="bodyRow">
-                    <div class="bodyContent">
-                        <div class="icon-hide"><img class="bodyIcon"
-                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png"
-                                alt="duration-icon"></div>
+            <div class="container">
+                
+                <div class="item bodyContent">
+                    <div class="icon-hide"><img class="bodyIcon"
+                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png"
+                            alt="duration-icon"></div>
 
-                        <span class="bodyRowOne">{{duration}}</span>
-                        <p class="bodyRowTwo">duration</p>
-                    </div>
-                    <div class="bodyContent">
-                        <div class="icon-hide"><img class="bodyIcon"
-                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png"
-                                alt="duration-icon"></div>
+                    <span class="bodyRowOne">{{duration}}</span>
+                    <p class="bodyRowTwo">duration</p>
+                </div>
+                <div class="item bodyContent">
+                    <div class="icon-hide"><img class="bodyIcon"
+                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png"
+                            alt="duration-icon"></div>
 
-                        <span class="bodyRowOne">{{points}}</span>
-                        <p class="bodyRowTwo">points</p>
-                    </div>
+                    <span class="bodyRowOne">{{points}}</span>
+                    <p class="bodyRowTwo">points</p>
                 </div>
 
-                <div class="bodyRow">
-                    <div class="bodyContent">
-                        <div class="icon-hide"><img class="bodyIcon"
-                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png"
-                                alt="duration-icon"></div>
+                <div class="bodybreak"></div>
+                <div class="item bodyContent">
+                    <div class="icon-hide"><img class="bodyIcon"
+                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png"
+                            alt="duration-icon"></div>
 
-                        <span class="bodyRowOne">{{avghr}}</span>
-                        <p class="bodyRowTwo">Average hr</p>
-                    </div>
-
-                    <div class="bodyContent">
-                        <div class="icon-hide"><img class="bodyIcon"
-                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png"
-                                alt="duration-icon"></div>
-
-                        <span class="bodyRowOne">{{peakhr}}</span>
-                        <p class="bodyRowTwo">peak hr</p>
-                    </div>
+                    <span class="bodyRowOne">{{avghr}}</span>
+                    <p class="bodyRowTwo">Average hr</p>
                 </div>
-                <div class="bodyRow">
-                    <div class="bodyContent">
-                        <div class="icon-hide"><img class="bodyIcon"
-                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png"
-                                alt="duration-icon"></div>
 
-                        <span class="bodyRowOne">{{calories}}</span>
-                        <p class="bodyRowTwo">calories</p>
-                    </div>
+                <div class="item bodyContent">
+                    <div class="icon-hide"><img class="bodyIcon"
+                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png"
+                            alt="duration-icon"></div>
 
-                    <div class="bodyContent">
-                        <div class="icon-hide"><img class="bodyIcon"
-                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png"
-                                alt="duration-icon"></div>
-
-                        <span class="bodyRowOne">{{steps}}</span>
-                        <p class="bodyRowTwo">steps</p>
-                    </div>
+                    <span class="bodyRowOne">{{peakhr}}</span>
+                    <p class="bodyRowTwo">peak hr</p>
                 </div>
+
+                <div class="bodybreak"></div>
+
+                <div class="item bodyContent">
+                    <div class="icon-hide"><img class="bodyIcon"
+                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png"
+                            alt="duration-icon"></div>
+
+                    <span class="bodyRowOne">{{calories}}</span>
+                    <p class="bodyRowTwo">calories</p>
+                </div>
+
+                <div class="item bodyContent">
+                    <div class="icon-hide"><img class="bodyIcon"
+                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png"
+                            alt="duration-icon"></div>
+
+                    <span class="bodyRowOne">{{steps}}</span>
+                    <p class="bodyRowTwo">steps</p>
+                </div>
+
+
             </div>
         </div>
 

@@ -25,205 +25,264 @@
             justify-content: space-around;
         }
 
-        .main1 {
-            flex: 1 0 50%;
-            margin: 20px;
-            justify-content: space-evenly;
-        }
+      
 
-        .break {
-            border-radius: 30px;
-            background-color: #f5f5f5;
-            text-align: left;
-            flex-shrink: 0;
-            padding: 20px 33px;
-            clear: both;
-            display: flex;
-            flex-direction: row;
-            flex-grow: 0;
-            flex-shrink: 1;
-            justify-content: space-around;
-            max-width: 700px;
-            margin: 0 auto;
-        }
 
-        .mainLogoContainer {
-            min-width: 120px;
-            min-height: 120px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin-right: 20px;
-        }
+    </style>
+</head>
 
-        .logoContainer {
+<body>
+    <div class="main1" style="margin:20px">
+        <div class="break" style="border-radius: 30px;
+        background-color: #f5f5f5;
+        text-align: left;
+        flex-shrink: 0;
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+        flex-shrink: 1;
+        justify-content: space-around;
+        max-width: 600px;
+        margin: 0 auto;">
+            <div class="headerTextContainer" style="justify-content: space-around;
             vertical-align: middle;
-        }
+            margin-top: 18px;">
+                <table style="width: 500px;">
+                    <tr>
+                        <td rowspan="3" style="padding: 10px;"><img class="mainLogo"
+                                src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otficon.png"
+                                alt="orange-theory-logo" style="width: 120px;
+                                height: 120px;"></td>
+                        <td>
+                            <p class="headerTextFirstRow" style="font-family: Helvetica;
+                            font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 2px;
+                            text-transform: uppercase;
+                            display: block;
+                            color: #ff8a16;">orange theory</p>
+                        </td>
 
-        .mainLogo {
-            width: 120px;
-            height: 120px;
-        }
-
-        .headerTextContainer {
-            justify-content: space-around;
-            vertical-align: middle;
-            margin-top: 18px;
-        }
-
-        .headerTextFirstRow {
-            font-family: Helvetica;
-            font-size: 1em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1;
-            text-align: left;
-            text-transform: uppercase;
-            display: block;
-            color: #ff8a16;
-        }
-
-        .headerTextSecondRow {
-            font-family: Helvetica;
-            font-size: 1em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-transform: capitalize;
-            color: #333333;
-            display: block;
-        }
-
-        .headerTextThirdRow {
-            font-family: Helvetica;
-            font-size: 1em;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: 3px;
-            color: #333333;
-            display: block;
-        }
-
-        .headerTextDivider {
-            background-color: #ff7307;
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="headerTextSecondRow" style="font-family: Helvetica;
+                            font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+                            text-transform: capitalize;
+                            color: #333333;
+                            display: block;">Workout Companion</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="headerTextThirdRow" style="font-family: Helvetica;
+                            font-family: Helvetica;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+                            color: #333333;
+                            display: block;">{{date}} <span class="headerTextDivider" style="background-color: #ff7307;
             border-width: 20px;
             border-radius: 50%;
             height: 4px;
             width: 4px;
             display: inline-block;
             position: relative;
-            top: -3px;
-        }
+            top: -1px;left:-1px"></span> {{time}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-        .chart {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(100, 1fr);
-            grid-column-gap: 5px;
-            height: 40vh;
-            padding: 15px 10px;
-            flex-shrink: 0;
-            justify-content: space-around;
-            text-align: center;
-            margin: 25px;
-        }
+        </div>
+        <div class="chart" style="text-align: center;
+        margin: 0 auto;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fefefe" align="center"
+                style="margin:0px auto;border-collapse:separate;border-spacing:0px;font-size:12px;max-height:210px;max-width:600px;padding:10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                height="210px">
+                <tbody
+                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                    <tr style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                        align="center">
+                        <td align="center"
+                            style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                            bgcolor="#fefefe" valign="bottom">
+                            <table bgcolor="#fefefe"
+                                style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64);max-width: 600px;width:330px"
+                                border="0" cellpadding="0" cellspacing="0">
+                                <tbody
+                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                    <tr
+                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                            align="center" bgcolor="#fefefe" valign="bottom">
+                                            <table bgcolor="#fefefe"
+                                                style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                                border="0" cellpadding="0" cellspacing="0">
+                                                <tbody
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <p
+                                                        style=" 
+                                                        height: 58px;
+                                                        font-family: Helvetica;
+                                                        font-size: 25px;
+                                                        font-weight: bold;
+                                                        font-stretch: normal;
+                                                        font-style: normal;
+                                                        letter-spacing: normal;
+                                                        text-align: center;color:rgb(51 51 51)">
+                                                        {{zone01}}</p>
+                                                    <tr
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <td style="margin:0px;border-radius:5px;font-size:12px;line-height:{{zone01}}px;max-height:192px;max-width:50px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(146 146 146);color:rgb(52,58,64)"
+                                                            width="50" height="{{zone01}}px">&nbsp;</td>
+                                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="20" height="px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                            align="center" bgcolor="#fefefe" valign="bottom">
+                                            <table bgcolor="#fefefe"
+                                                style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                                border="0" cellpadding="0" cellspacing="0">
+                                                <tbody
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <p
+                                                        style=" 
+                                                        height: 58px;
+                                                        font-family: Helvetica;
+                                                        font-size: 25px;
+                                                        font-weight: bold;
+                                                        font-stretch: normal;
+                                                        font-style: normal;
+                                                        letter-spacing: normal;
+                                                        text-align: center;color:rgb(51 51 51)">
+                                                        {{zone02}}</p>
+                                                    <tr
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <td style="margin:0px;border-radius:5px;font-size:12px;line-height:{{zone02}}px;max-height:192px;max-width:50px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(11 156 236);color:rgb(52,58,64)"
+                                                            width="50" height="{{zone02}}px">&nbsp;</td>
+                                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="20" height="1px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                            align="center" bgcolor="#fefefe" valign="bottom">
+                                            <table bgcolor="#fefefe"
+                                                style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                                border="0" cellpadding="0" cellspacing="0">
+                                                <tbody
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <p
+                                                        style=" 
+                                                        height: 58px;
+                                                        font-family: Helvetica;
+                                                        font-size: 25px;
+                                                        font-weight: bold;
+                                                        font-stretch: normal;
+                                                        font-style: normal;
+                                                        letter-spacing: normal;
+                                                        text-align: center;color:rgb(51 51 51)">
+                                                        {{zone03}}</p>
 
-        .bar-45 {
-            border-radius: 9.2px;
-            transition: all .6s ease;
-            background-color: #bbc5c5;
-            grid-row-start: {{zone01}};
-            grid-row-end: 101;
-        }
+                                                    <tr
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <td style="margin:0px;border-radius:5px;font-size:12px;line-height:{{zone03}}px;max-height:192px;max-width:50px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(2 193 57);color:rgb(52,58,64)"
+                                                            width="50" height="{{zone03}}px">&nbsp;</td>
+                                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="20" height="1px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                            align="center" bgcolor="#fefefe" valign="bottom">
+                                            <table bgcolor="#fefefe"
+                                                style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                                border="0" cellpadding="0" cellspacing="0">
+                                                <tbody
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
 
-        .zone {
-            position: relative;
-            top: -50px;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 1.5em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            margin-bottom: 5px;
+                                                    <p
+                                                        style=" 
+                                                        height: 58px;
+                                                        font-family: Helvetica;
+                                                        font-size: 25px;
+                                                        font-weight: bold;
+                                                        font-stretch: normal;
+                                                        font-style: normal;
+                                                        letter-spacing: normal;
+                                                        text-align: center;color:rgb( 51 51 51)">
+                                                        {{zone04}}</p>
+                                                    <tr
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <td style="margin:0px;border-radius:5px;font-size:12px;line-height:{{zone04}}px;max-height:192px;max-width:50px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(255 138 22);color:rgb(52,58,64)"
+                                                            width="50" height="{{zone04}}px">&nbsp;</td>
+                                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="20" height="1px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                            align="center" bgcolor="#fefefe" valign="bottom">
+                                            <table bgcolor="#fefefe"
+                                                style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                                border="0" cellpadding="0" cellspacing="0">
+                                                <tbody
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
 
+                                                    <p
+                                                        style=" 
+                                                        height: 58px;
+                                                        font-family: Helvetica;
+                                                        font-size: 25px;
+                                                        font-weight: bold;
+                                                        font-stretch: normal;
+                                                        font-style: normal;
+                                                        letter-spacing: normal;
+                                                        text-align: center;color:rgb(51 51 51)">
+                                                        {{zone05}}</p>
+                                                    <tr
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <td style="margin:0px;border-top-left-radius:5px;border-top-right-radius:5px;font-size:12px;line-height:{{zone05}}px;max-height:192px;max-width:50px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(250 59 8);color:rgb(52,58,64)"
+                                                            width="50" height="{{zone05}}px">&nbsp;</td>
+                                                        <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="20" height="1px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-        }
+        </div>
 
-        .zoneOne {
-            color: #333333;
-        }
-
-        .zoneTwo {
-            color: #333333;
-        }
-
-        .zoneThree {
-            color: #333333;
-        }
-
-        .zoneFour {
-            color: #333333;
-        }
-
-        .zoneFive {
-            color: #333333;
-        }
-
-        .bar-100 {
-            border-radius: 9.2px;
-            transition: all .6s ease;
-            background-color: #0b9cec;
-            grid-row-start: {{zone02}};
-            grid-row-end: 101;
-        }
-
-
-
-        .bar-63 {
-            border-radius: 9.2px;
-            transition: all .6s ease;
-            background-color: #02c139;
-            grid-row-start: {{zone03}};
-            grid-row-end: 101;
-        }
-
-
-
-        .bar-11 {
-            border-radius: 9.2px;
-            transition: all .6s ease;
-            background-color: #ff8a16;
-            grid-row-start: {{zone04}};
-            grid-row-end: 101;
-        }
-
-
-
-        .bar-46 {
-            border-radius: 9.2px;
-            transition: all .6s ease;
-            background-color: #fa3b08;
-            grid-row-start: {{zone05}};
-            grid-row-end: 101;
-        }
-
-
-
-        .headerTwoContainer {
-            text-align: center;
-        }
-
-        .headerTwoContent {
-            text-transform: uppercase;
+           
+            <span class="headerTwoContainer" style=" text-align: center;">
+            <p class="headerTwoContent" style="text-transform: uppercase;
             margin-top: 0%;
             font-family: Helvetica;
             font-size: 22px;
@@ -233,375 +292,532 @@
             line-height: 1.09;
             letter-spacing: 4px;
             margin: 5px;
-            color: #333333;
-        }
-
-        .dividerOne {
-            height: 1px;
-            border: solid 1px #e6e6e6;
-            margin: 27px 0px;
-        }
-
-        .EmailBodycontainer {
-            max-width: 600px;
-            margin: 0 auto;
-            padding:20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .BodyContainer {
-            max-width: 600px;
-            padding: 10px;
-            margin: 0;
-            list-style: none;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            justify-content: space-around;
-
-        }
-        .container {
-            display: inline-flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            max-width: 500px;
-            padding: 10px;
-            margin: 0 auto;
-            justify-content: center;
-            /* background-color: blue; */
-        }
-
-        
-
-        .bodyRow {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .bodyContent {
-            background-color: #f5f5f5;
-            /* width: 80%; */
-            /* min-width: 150px; */
-            /* min-height: 150px; */
-            /* height: 80%; */
-            padding: 10px;
-            text-align: center;
-            border-radius: 50px;
-            margin-top: 25px;
-            margin-right: 5px;
-            /* display: flex; */
-            /* flex-direction: column; */
-            justify-content: space-around;
-            /* flex-basis: auto; */
-            padding: 5px;
-        }
-
-
-        .bodybreak {
-  flex-basis: 100%;
-  height: 0;
-}
-        
-@media (max-width:320px)  { 
-            .bodyIcon {
-            width: 3.4em;
-            height: 3.4em;
-        }
-        .container .item {
-            width: 8.25em;
-            height: 8.3em;
-            /* background-color: red; */
-            /* margin: 10px; */
-        }
-        .bodyRowOne {
-            font-family: Helvetica;
-            font-size: 1em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 2;
-            letter-spacing: normal;
-            text-align: center;
-            color: #333333;
-        }
-
-        .bodyRowTwo {
-            text-transform: uppercase;
-            opacity: 0.5;
-            font-family: Helvetica;
-            font-size: 0.5em;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1;
-            letter-spacing: 4px;
-            color: #333333;
-        }
-        }
-/* smartphones, iPhone, portrait 480x320 phones */ 
-        @media (min-width:320px)  { 
-            .bodyIcon {
-            width: 3.4em;
-            height: 3.4em;
-        }
-        .container .item {
-            width: 9.25em;
-            height: 9.3em;
-            /* background-color: red; */
-            /* margin: 10px; */
-        }
-        .bodyRowOne {
-            font-family: Helvetica;
-            font-size: 1em;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 2;
-            letter-spacing: normal;
-            text-align: center;
-            color: #333333;
-        }
-
-        .bodyRowTwo {
-            text-transform: uppercase;
-            opacity: 0.5;
-            font-family: Helvetica;
-            font-size: 0.5em;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1;
-            letter-spacing: 4px;
-            color: #333333;
-        }
-        }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
-       
-
-        .learnMore {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .learMoreText {
-            font-family: Helvetica;
-            font-size: 22px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.09;
-            letter-spacing: 2px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #5c5c5c;
-        }
-
-        .inviteFriendContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 50px;
-        }
-
-        .inviteFriendText {
-            height: 40px;
-            border-radius: 100px;
-            text-transform: uppercase;
-            text-align: center;
-            vertical-align: middle;
-            text-decoration: none;
-            font-family: Helvetica;
-            font-size: 20px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 2.2;
-            letter-spacing: 3.33px;
-            text-align: center;
-            color: #ffffff;
-            padding: 5px 40px;
-            background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);
-        }
-
-        .unsubscribeContainer {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 30px;
-        }
-
-        .unsubscribeText {
-            font-family: Helvetica;
-            font-size: 18px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 0.94;
-            letter-spacing: normal;
-            text-align: center;
-            text-decoration: none;
-            text-transform: capitalize;
-            color: #898989;
-            margin-top: 10px;
-        }
-
-
-        
-
-        @supports(order) {
-            .parent {
-                display: flex;
-            }
-
-            .child-to-reorder {
-                order: 1;
-            }
-        }
-
-        @media (max-width: 600px) {
-            body {
-                margin: 20px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="main1">
-        <div class="break">
-            <div class="mainLogoContainer">
-                <div class="logoContainer">
-                    <img class="mainLogo"
-                        src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otficon.png"
-                        alt="orange-theory-logo">
-
-                </div>
-            </div>
-            <div class="headerTextContainer">
-                <p class="headerTextFirstRow">orange theory</p>
-                <p class="headerTextSecondRow">Workout Companion</p>
-                <p class="headerTextThirdRow">{{date}} <span class="headerTextDivider"></span> {{time}}</p>
-            </div>
-
-        </div>
-        <div class="chart">
-            <div class="bar-45">
-                <span class="zone zoneOne">{{zone01}}</span>
-            </div>
-            <div class="bar-100">
-                <span class="zone zoneTwo">{{zone02}}</span>
-            </div>
-            <div class="bar-63">
-                <span class="zone zoneThree">{{zone03}}</span>
-            </div>
-            <div class="bar-11">
-                <span class="zone zoneFour">{{zone04}}</span>
-            </div>
-            <div class="bar-46">
-                <span class="zone zoneFive">{{zone05}}</span>
-            </div>
-
-        </div>
-
-        <span class="headerTwoContainer">
-            <p class="headerTwoContent">minutes per zone</p>
+            color: #333333;">minutes per zone</p>
         </span>
 
-        <hr class="dividerOne">
+        <hr class="dividerOne" style="height: 1px;
+        border: solid 1px #e6e6e6;
+        margin: 27px 0px;">
 
-        <div class="EmailBodycontainer">
-            <div class="container">
-                
-                <div class="item bodyContent">
-                    <div class="icon-hide"><img class="bodyIcon"
-                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png"
-                            alt="duration-icon"></div>
+        <!-- From here -->
+        <table bgcolor="#fefefe" align="center"
+            style="margin:0px auto;border-collapse:separate;border-spacing:0px;font-size:12px;max-width:630px;padding:10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+            border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr style="margin:0px;font-size:0px;padding:5px 0px 10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                    align="center">
+                    <td align="center" bgcolor="#fefefe"
+                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                        <table bgcolor="#fefefe"
+                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                            border="0" cellpadding="0" cellspacing="0">
+                            <tbody
+                                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                <tr
+                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                    <td style="margin:0px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size:12px;padding:25px 20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(245,245,245);color:rgb(52,58,64)"
+                                        width="500" valign="top" align="center">
+                                        <table
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                            border="0" cellpadding="0" cellspacing="0">
+                                            <tbody
+                                                style="font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfduration.png"
+                                                            alt="flame"
+                                                            style="margin:0px;border:0px;font-size:12px;height:auto;padding:0px;width:48px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="48" class="CToWUd"></td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64);text-align:center">
+                                                        <p
+                                                            style=" width: 96px;
+                                                            height: 28px;
+                                                            font-family: Helvetica;
+                                                            font-size: 28px;
+                                                            font-weight: bold;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-align: center;color:rgb(51 51 51)">
+                                                            {{duration}}</p>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <p
+                                                            style="margin:0px;font-size:14px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(111,118,123);text-transform:uppercase">
+                                                            duration</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="margin:0px;font-size:12px;max-width:175px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                        bgcolor="#fefefe" width="175"></td>
+                                    <td style="margin:0px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size:12px;padding:25px 20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(245,245,245);color:rgb(52,58,64)"
+                                        width="500" valign="top" align="center">
+                                        <table
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                            border="0" cellpadding="0" cellspacing="0">
+                                            <tbody
+                                                style="font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png"
+                                                            alt="splat"
+                                                            style="margin:0px;border:0px;font-size:12px;height:auto;padding:0px;width:48px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="48" class="CToWUd"></td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64);text-align:center">
+                                                        <p
+                                                            style=" width: 96px;
+                                                            height: 28px;
+                                                            font-family: Helvetica;
+                                                            font-size: 28px;
+                                                            font-weight: bold;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-align: center;color:rgb(51 51 51)">
+                                                            {{points}}</p>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <p
+                                                            style="margin:0px;font-size:14px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(111,118,123);text-transform:uppercase">
+                                                            points</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-                    <span class="bodyRowOne">{{duration}}</span>
-                    <p class="bodyRowTwo">duration</p>
-                </div>
-                <div class="item bodyContent">
-                    <div class="icon-hide"><img class="bodyIcon"
-                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfpoints.png"
-                            alt="duration-icon"></div>
+        <!-- Divider table -->
 
-                    <span class="bodyRowOne">{{points}}</span>
-                    <p class="bodyRowTwo">points</p>
-                </div>
+        <table align="center" bgcolor="#fefefe"
+            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+            border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr
+                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                    <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                        bgcolor="#fefefe" height="30"></td>
+                </tr>
+            </tbody>
+        </table>
 
-                <div class="bodybreak"></div>
-                <div class="item bodyContent">
-                    <div class="icon-hide"><img class="bodyIcon"
-                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png"
-                            alt="duration-icon"></div>
+        <table align="center"
+            style="margin:0px auto;border-collapse:separate;border-spacing:0px;font-size:12px;max-width:630px;padding:10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+            border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr style="margin:0px;font-size:0px;padding:5px 0px 10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                    align="center">
+                    <td align="center" bgcolor="#fefefe"
+                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                        <table
+                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                            border="0" cellpadding="0" cellspacing="0">
+                            <tbody
+                                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                <tr
+                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                    <td style="margin:0px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size:12px;padding:25px 20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(245,245,245);color:rgb(52,58,64)"
+                                        width="500" valign="top" align="center">
+                                        <table
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                            border="0" cellpadding="0" cellspacing="0">
+                                            <tbody
+                                                style="font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfavgheart.png"
+                                                            alt="heart rate"
+                                                            style="margin:0px;border:0px;font-size:12px;height:auto;padding:0px;width:48px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="48" class="CToWUd"></td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64);text-align:center">
+                                                        <p
+                                                            style=" width: 96px;
+                                                            height: 28px;
+                                                            font-family: Helvetica;
+                                                            font-size: 28px;
+                                                            font-weight: bold;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-align: center;color:rgb(51 51 51)">
+                                                            {{avghr}}</p>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <p
+                                                            style="margin:0px;font-size:14px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(111,118,123)">
+                                                            AVG. HEART-RATE</p>
+                                                    </td>
+                                                </tr>
 
-                    <span class="bodyRowOne">{{avghr}}</span>
-                    <p class="bodyRowTwo">Average hr</p>
-                </div>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="margin:0px;font-size:12px;max-width:175px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                        bgcolor="#fefefe" width="175"></td>
+                                    <td style="margin:0px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size:12px;padding:25px 20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(245,245,245);color:rgb(52,58,64)"
+                                        width="500" valign="top" align="center">
+                                        <table
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                            border="0" cellpadding="0" cellspacing="0">
+                                            <tbody
+                                                style="font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png"
+                                                            alt="percentage"
+                                                            style="margin:0px;border:0px;font-size:12px;height:auto;padding:0px;width:48px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="48" class="CToWUd"></td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64);text-align:center">
+                                                        <p
+                                                            style=" width: 96px;
+                                                            height: 28px;
+                                                            font-family: Helvetica;
+                                                            font-size: 28px;
+                                                            font-weight: bold;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-align: center;color:rgb(51 51 51)">
+                                                            {{peakhr}}</p>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <p
+                                                            style="margin:0px;font-size:14px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(111,118,123)">
+                                                            peak hr</p>
+                                                    </td>
+                                                </tr>
 
-                <div class="item bodyContent">
-                    <div class="icon-hide"><img class="bodyIcon"
-                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfshape.png"
-                            alt="duration-icon"></div>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-                    <span class="bodyRowOne">{{peakhr}}</span>
-                    <p class="bodyRowTwo">peak hr</p>
-                </div>
+        <table align="center"
+            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+            border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr
+                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                    <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                        height="30"></td>
+                </tr>
+            </tbody>
+        </table>
 
-                <div class="bodybreak"></div>
+        <table align="center"
+            style="margin:0px auto;border-collapse:separate;border-spacing:0px;font-size:12px;max-width:630px;padding:10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+            border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr style="margin:0px;font-size:0px;padding:5px 0px 10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                    align="center">
+                    <td align="center" bgcolor="#fefefe"
+                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                        <table
+                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                            border="0" cellpadding="0" cellspacing="0">
+                            <tbody
+                                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                <tr
+                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                    <td style="margin:0px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size:12px;padding:25px 20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(245,245,245);color:rgb(52,58,64)"
+                                        width="500" valign="top" align="center">
+                                        <table
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                            border="0" cellpadding="0" cellspacing="0">
+                                            <tbody
+                                                style="font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png"
+                                                            alt="heart rate"
+                                                            style="margin:0px;border:0px;font-size:12px;height:auto;padding:0px;width:48px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="48" class="CToWUd"></td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64);text-align:center">
+                                                        <p
+                                                            style=" width: 96px;
+                                                            height: 28px;
+                                                            font-family: Helvetica;
+                                                            font-size: 28px;
+                                                            font-weight: bold;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-align: center;color:rgb(51 51 51)">
+                                                            {{calories}}</p>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <p
+                                                            style="margin:0px;font-size:14px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(111,118,123)">
+                                                            calories</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="margin:0px;font-size:12px;max-width:175px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                        bgcolor="#fefefe" width="175"></td>
+                                    <td style="margin:0px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-bottom-left-radius:10px;font-size:12px;padding:25px 20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;background-color:rgb(245,245,245);color:rgb(52,58,64)"
+                                        width="500" valign="top" align="center">
+                                        <table
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                                            border="0" cellpadding="0" cellspacing="0">
+                                            <tbody
+                                                style="font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <img src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png"
+                                                            alt="percentage"
+                                                            style="margin:0px;border:0px;font-size:12px;height:auto;padding:0px;width:48px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                                                            width="48" class="CToWUd"></td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64);text-align:center">
+                                                        <p
+                                                            style=" width: 96px;
+                                                            height: 28px;
+                                                            font-family: Helvetica;
+                                                            font-size: 28px;
+                                                            font-weight: bold;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 1;
+                                                            letter-spacing: normal;
+                                                            text-align: center;color:rgb(51 51 51)">
+                                                            {{steps}}</p>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <p
+                                                            style="margin:0px;font-size:14px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(111,118,123)">
+                                                            steps</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center"
+            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+            border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr
+                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                    <td style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                        height="30"></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Till here -->
+        <!-- <div class="EmailBodycontainer">
+            <div class="container"> -->
 
-                <div class="item bodyContent">
-                    <div class="icon-hide"><img class="bodyIcon"
-                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfcalories.png"
-                            alt="duration-icon"></div>
-
-                    <span class="bodyRowOne">{{calories}}</span>
-                    <p class="bodyRowTwo">calories</p>
-                </div>
-
-                <div class="item bodyContent">
-                    <div class="icon-hide"><img class="bodyIcon"
-                            src="https://pkzone-workout-companion-assets.s3-us-west-2.amazonaws.com/otfsteps.png"
-                            alt="duration-icon"></div>
-
-                    <span class="bodyRowOne">{{steps}}</span>
-                    <p class="bodyRowTwo">steps</p>
-                </div>
 
 
+
+
+
+
+
+
+
+
+
+
+        <!-- 
             </div>
-        </div>
+        </div> -->
 
 
-        <hr class="dividerOne">
+        <hr class="dividerOne" style="height: 1px;
+        border: solid 1px #e6e6e6;
+        margin: 27px 0px;">
+
+        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+            style="margin:0px auto;/* background-image:linear-gradient(to right,rgb(235,55,36),rgb(239,129,50)); */border-collapse:separate;border-spacing:0px;font-size:12px;max-width:670px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;">
+            <tbody
+                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                <tr style="margin:0px;font-size:0px;padding:5px 0px 10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                    align="center">
+                    <td style="margin:0px;display:block;font-size:12px;padding:5px 0px 15px 8px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)"
+                        width="100% !important" valign="top">
+                        <table
+                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)"
+                            border="0" cellpadding="0" cellspacing="0">
+                            <tbody
+                                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                <tr
+                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                    <td
+                                        style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                        <table height="84px" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                            style="margin:0px;border-collapse:separate;border-spacing:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-decoration:none!important;color:rgb(52,58,64)">
+                                            <tbody
+                                                style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:0 10px 10px;font-size:12px;padding:20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <a href="https://www.workoutcompanions.app/orange-theory-zones-learn-more""
+                                                            style=" font-family: Helvetica; font-size: 22px;
+                                                            font-weight: bold; font-stretch: normal; font-style: normal;
+                                                            line-height: 1.09; letter-spacing: 2px; text-align: center;
+                                                            text-transform: uppercase; color: #5c5c5c;">
+                                                            learn more</a>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:10px;font-size:12px;padding:10px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <a class="inviteFriendText" type="button"
+                                                            href="https://www.workoutcompanions.app/orange-theory-zones-invite-friends"
+                                                            style="height: 40px;
+                            border-radius: 100px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            vertical-align: middle;
+                            text-decoration: none;
+                            font-family: Helvetica;
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 2.2;
+                            letter-spacing: 3.33px;
+                            text-align: center;
+                            color: #ffffff;
+                            padding: 5px 40px;
+                            background-image: linear-gradient(to bottom, #ffbc51 -41%, #ff5b04 102%);margin-top:20px">invite a
+                                                            friend</a>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    style="margin:0px;font-size:12px;padding:0px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                    <td align="center"
+                                                        style="margin:10px;font-size:12px;padding:20px;font-family:Klavika,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;color:rgb(52,58,64)">
+                                                        <a class="" type="button"
+                                                            href="https://www.workoutcompanions.app/orange-theory-zones-unsubscribe"
+                                                            style="font-family: Helvetica;
+                                                            font-size: 18px;
+                                                            font-weight: normal;
+                                                            font-stretch: normal;
+                                                            font-style: normal;
+                                                            line-height: 0.94;
+                                                            letter-spacing: normal;
+                                                            text-align: center;
+                                                            text-decoration: none;
+                                                            text-transform: capitalize;
+                                                            color: #898989;
+                                                            margin-top: 20px;">unsubscribe</a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
 
 
-        <div class="learnMore">
-            <a class="learMoreText" href="https://www.workoutcompanions.app/orange-theory-zones-learn-more">learn
-                more</a>
-        </div>
-        <div class="inviteFriendContainer">
-            <div>
-                <a class="inviteFriendText" type="button"
-                    href="https://www.workoutcompanions.app/orange-theory-zones-invite-friends">invite a friend</a>
-            </div>
 
-        </div>
 
-        <div class="unsubscribeContainer">
-            <a class="unsubscribeText" href="https://www.workoutcompanions.app/orange-theory-zones-unsubscribe"
-                style="">unsubscribe</a>
-        </div>
+
+
+
 
     </div>
 </body>
